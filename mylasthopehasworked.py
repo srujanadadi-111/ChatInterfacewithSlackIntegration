@@ -227,8 +227,6 @@ print("All PDFs ingested and ChromaDB persisted.")
 
 """Printing all chunks in Chromadb"""
 
-!pip install chromadb
-
 import chromadb
 
 client = chromadb.PersistentClient(path="/content/chroma_db")
