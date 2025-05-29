@@ -41,7 +41,8 @@ if not slack_token:
 client = WebClient(token=slack_token)
 
 # --- CHROMA SETUP ---
-chroma_client = chromadb.PersistentClient(path="/content/chroma_db")
+#chroma_client = chromadb.PersistentClient(path="/content/chroma_db")
+chroma_client = chromadb.PersistentClient(path="/Users/srujana/chroma_db")
 collection = chroma_client.get_or_create_collection("hcmbot_knowledge")
 
 def get_all_joined_channel_ids():
