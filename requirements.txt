@@ -1,0 +1,13 @@
+openai==0.28
+gdown
+streamlit
+numpy
+nltk==3.5
+PyMuPDF
+python-pptx
+openpyxl
+pymongo
+slack_sdk
+reportlab
+boto3
+chromadb
