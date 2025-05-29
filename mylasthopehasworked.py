@@ -473,31 +473,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-"""
-def main():
-    question = input("Enter your question: ")
-    # Example usage:
-    results = hybrid_retrieve_chunks("when is srujana's bday", top_k=10)
-    for rank, (doc, meta) in enumerate(results):
-      print(f"Rank: {rank+1}")
-      print("Source:", meta.get("source", "unknown"))
-      print("Metadata:", meta)
-      print("Content snippet:", doc[:400])
-      print("---")
-
-    # Optional: LLM answer
-    if os.environ.get("OPENAI_API_KEY", "").startswith("sk-"):
-        try:
-            answer = chat_with_assistant(question, docs)
-            print("\n--- LLM Synthesized Answer ---")
-            print(answer)
-        except Exception as e:
-            print("LLM error:", str(e))
-
-if __name__ == "__main__":
-    main()
-"""
-"""
 # --- Streamlit Interface ---
 if 'question_clicks' not in st.session_state:
     st.session_state.question_clicks = {
@@ -556,4 +531,3 @@ if submit_button or query:
             st.info("Set your OPENAI_API_KEY as an environment variable to enable LLM answers.")
     else:
         st.warning("Please enter a question before clicking Submit.")
-"""
